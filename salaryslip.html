@@ -1,0 +1,31 @@
+<html>
+
+<body style="color:{{C}}"></body>
+<h1>Salary Calculator</h1>
+
+Name: {{name}}
+<br>
+Salary: {{Esalary}}
+<br>
+
+{% if Esalary>=3000 %}
+Tax rate is 30%
+Tax calculated is: {{Esalary*30/100}}
+{% endif %}
+
+{% Elif Esalary>2000 and Esalary<3000 %}
+Tax rate is 20%
+Tax calculated is: {{Esalary*20/100}}
+{% endif %}
+
+{% Elif Esalary>1000 and Esalary<2000 %}
+Tax rate is 11%
+Tax  calculated is: {{Esalary*11/100}}
+{% endif %}
+
+{% Elif Esalary<=1000 %}
+Tax rate is 0%
+Tax calculated is: 0
+{% endif %}
+
+</html>
